@@ -41,11 +41,6 @@
     display: none;
 }
 
-/*
-Hero Section's Navbar End!
-Hero Section's Container Start!
-*/
-
 .hero__section_container {
     display: flex;
     flex-direction: column;
@@ -92,6 +87,136 @@ Hero Section's Container Start!
 .input_container_search {
     width: 70%;
     text-align: center;
+}
+
+.container {
+    margin: 50px auto;
+    width: 80%;
+}
+
+/*
+HeroSection End
+*/
+
+.we_offer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.we_offer .card {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    transition: all 150ms ease-in-out;
+}
+
+.we_offer .card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.we_offer .card h2 {
+    padding: 10px 10px 0 10px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.we_offer .card p {
+    font-size: 12px;
+    padding: 0 10px 16px 10px;
+}
+
+.we_offer .card:hover {
+    transform: scale(1.05);
+}
+
+/*
+We Offer Section End
+*/
+
+.collections h2 {
+    font-weight: 400;
+}
+
+.collections .collections__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.collections__head span:nth-child(2){
+    color: #ff7e8b;
+    font-size: 16px;
+}
+
+.collections__card_container {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 24px;
+}
+
+.collections__card_container .card {
+    height: 300px;
+    min-width: 240px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.card1 {
+    background-image: url(/images/collection1.jpg);
+}
+
+.card2 {
+    background-image: url(/images/collection2.jpg);
+}
+
+.card3 {
+    background-image: url(/images/collection3.jpg);
+}
+
+.card4 {
+    background-image: url(/images/collection4.jpg);
+}
+
+.overlay {
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.9) 0%,
+        rgba(0, 0, 0, 0.05) 50%,
+        rgba(0, 0, 0, 0.05) 85%
+    );
+    width: 100%;
+    height: 100%;
+    display: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+.collections__card_container .card .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 12px 16px;
+    color: white;
+    font-size: 15px;
+}
+
+.content h4 {
+    font-weight: 400;
 }
 
 @media only screen and (max-width: 650px){
