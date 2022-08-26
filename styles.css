@@ -10,7 +10,7 @@ Universal Styling Complete
 */
 
 .hero__section {
-    background: url(/images/heroSectionBackground.jpg);
+    background: url(images/heroSectionBackground.jpg);
     background-position: center;
     background-size: cover;
     color: white;
@@ -533,38 +533,11 @@ Footer End
         padding: 10px;
         width: 90%;
     }
-
-    .hero__section_container {
-        height: calc(80vh - 60px);
+    
+    .get_the_app {
+        padding: 3rem 0;
     }
-
-    .input_container_location {
-        border: none;
-    }
-
-    .footer_section1 {
-        flex-direction: column;
-        gap: 16px;
-        align-items: flex-start;
-    }
-
-    .navigation_container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media only screen and (max-width: 1300px){
-    .get_the_app .semiContainer .left,
-    .get_the_app .semiContainer .right {
-        flex: 1;
-    }
-
-    .get_the_app .semiContainer {
-        width: 60%;
-    }
-}
-
-@media only screen and (max-width: 900px){
+    
     .get_the_app {
         padding: 2rem;
     }
@@ -576,15 +549,37 @@ Footer End
     .navigation_container {
         grid-template-columns: repeat(3, 1fr);
     }
-}
-
-@media only screen and (max-width: 700px){
-    .get_the_app {
-        padding: 3rem 0;
+    
+    .footer_section1 {
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
     }
 
+    .navigation_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .get_the_app .semiContainer .left,
+    .get_the_app .semiContainer .right {
+        flex: 1;
+    }
+
+    .get_the_app .semiContainer {
+        width: 60%;
+    }
+  
     .get_the_app .semiContainer {
         width: 80%;
         flex-direction: column;
     }
+  
+    .hero__section_container {
+        height: calc(80vh - 60px);
+    }
+
+    .input_container_location {
+        border: none;
+    }
+
 }
