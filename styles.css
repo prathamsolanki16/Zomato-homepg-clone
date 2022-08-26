@@ -5,6 +5,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/*
+Universal Styling Complete
+*/
+
 .hero__section {
     background: url(/images/heroSectionBackground.jpg);
     background-position: center;
@@ -140,12 +144,13 @@ We Offer Section End
 */
 
 .collections h2 {
-    font-weight: 400;
+    margin-left: 105px;
+    font-weight: 450;
 }
 
 .collections .collections__head {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     font-size: 18px;
     gap: 16px;
@@ -219,7 +224,288 @@ We Offer Section End
     font-weight: 400;
 }
 
-@media only screen and (max-width: 650px){
+/*
+Collections End
+*/
+
+.container_popular_location {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.popular_location_card {
+    position: relative;
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 3;
+    font-weight: 400;
+}
+
+.popular_location_card1,
+.popular_location_card2,
+.popular_location_card3,
+.popular_location_card4,
+.popular_location_card5,
+.popular_location_card6,
+.popular_location_card7,
+.popular_location_card8,
+.popular_location_card9 {
+    position: relative;
+    width: 100%;
+    -moz-box-flex: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+    max-width: 33.3333%;
+    padding: 1.2rem 1.5rem;
+    border-radius: 0.8rem;
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    border: 1px solid rgb(232, 232, 232);
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    -moz-box-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/*
+Popular Location Card End
+*/
+
+.get_the_app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 251, 247);
+    width: 100%;
+    padding: 48px 48px;
+}
+
+.get_the_app .semiContainer {
+    display: flex;
+    width: 60%;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.get_the_app .semiContainer .left {
+    flex: 2;
+}
+
+.get_the_app .semiContainer .left img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.get_the_app .semiContainer .right {
+    flex: 3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.right h1 {
+    font-weight: 550;
+    font-size: 32px;
+}
+
+.right p {
+    font-size: 17px;
+    font-weight: 350;
+}
+
+.semiContainer .right .radio_container {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.semiContainer .right .radio_container div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-self: center;
+}
+
+.semiContainer .right .radio_container div input {
+    height: 15px;
+    width: 15px;
+    accent-color: rgb(239, 75, 95);
+}
+
+.semiContainer .right .input_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.input_container input,
+.input_container button {
+    padding: 10px 12px;
+}
+
+.input_container input {
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+    flex: auto;
+}
+
+.input_container button {
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(239, 75, 95);;
+    color: white;
+    cursor: pointer;
+}
+
+.right .download_app_container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.download_app_container h5 {
+    font-weight: 350;
+    font-size: 15px;
+    color: gray;
+}
+
+.download_app_container div {
+    display: flex;
+    gap: 8px;
+}
+
+.download_app_container img {
+    width: 65%;
+    border-radius: 10px;
+}
+
+/*
+Get The App End
+*/
+
+.footer {
+    width: 100%;
+}
+
+.footer_section1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.footer_section1 img {
+    width: 120px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.section1__buttonContainer {
+    display: flex;
+    gap: 16px;
+}
+
+.section1__buttonContainer button {
+    padding: 5px;
+    width: 100px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.navigation_container {
+    display: grid;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    padding: 48px 0;
+}
+
+.link_container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.link_container h5 {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 5px;
+    letter-spacing: 0.8px;
+}
+
+.footer_link {
+    text-decoration: none;
+    color: gray;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+.footer_link:hover {
+    color: black;
+}
+
+.social_links_container {
+    display: flex;
+    gap: 5px;
+}
+
+.social_links_container button {
+    background-color: black;
+    height: 25px;
+    width: 25px;
+    border: none;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social_links_container button i {
+    color: white;
+    font-size: 13px;
+}
+
+.footer__store_logo {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.footer .disclaimer {
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+    font-size: 16px;
+    color: gray;
+    border-top: 1px solid gray;
+}
+
+/*
+Footer End
+*/
+
+@media only screen and (max-width: 400px) {
+    .navigation_container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 600px){
     .navbar__menu_container .link {
         display: none;
     }
@@ -254,5 +540,51 @@ We Offer Section End
 
     .input_container_location {
         border: none;
+    }
+
+    .footer_section1 {
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+    }
+
+    .navigation_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 1300px){
+    .get_the_app .semiContainer .left,
+    .get_the_app .semiContainer .right {
+        flex: 1;
+    }
+
+    .get_the_app .semiContainer {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .get_the_app {
+        padding: 2rem;
+    }
+
+    .get_the_app .container {
+        width: 90%;
+    }
+
+    .navigation_container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .get_the_app {
+        padding: 3rem 0;
+    }
+
+    .get_the_app .semiContainer {
+        width: 80%;
+        flex-direction: column;
     }
 }
